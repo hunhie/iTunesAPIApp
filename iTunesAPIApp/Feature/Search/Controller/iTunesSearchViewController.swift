@@ -9,6 +9,14 @@ import UIKit
 
 final class iTunesSearchViewController: BaseViewController {
   
+  let mainView = iTunesSearchView()
+  
+  override func loadView() {
+    super.loadView()
+    
+    view = mainView
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
 
